@@ -1,0 +1,344 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#DCDDDE"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+
+        android:gravity="center">
+
+
+
+        <EditText
+            android:id="@+id/etxt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:hint="@string/date" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:gravity="center"
+
+            android:text="OK"
+            android:onClick="submitDate"/>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#969696" />
+
+        <TextView
+            android:id="@+id/date_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="12 janvier 2015"
+            android:textSize="24dp"
+            android:textColor="#000000"
+            android:background="#9E9E9E"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#969696" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                style="@style/WorkingDay">
+
+
+                <TextView
+                    style="@style/DayTeamStyle"
+                    android:text="J1"
+                    />
+
+                <TextView
+                    android:id="@+id/J1"
+                    style="@style/DayTeamStyle"
+                    android:text="F"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                style="@style/WorkingDay">
+
+
+                <TextView
+                    style="@style/DayTeamStyle"
+                    android:text="J2"
+                    />
+
+                <TextView
+                    android:id="@+id/J2"
+                    style="@style/DayTeamStyle"
+                    android:text="F"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                style="@style/WorkingDay">
+
+
+                <TextView
+
+                    style="@style/DayTeamStyle"
+                    android:text="J3" />
+
+                <TextView
+                    android:id="@+id/J3"
+                    style="@style/DayTeamStyle"
+                    android:text="F" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                style="@style/RestDay">
+
+
+                <TextView
+
+                    style="@style/DayTeamStyle"
+                    android:text="J4" />
+
+                <TextView
+                    android:id="@+id/J4"
+                    style="@style/DayTeamStyle"
+                    android:text="F" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                style="@style/RestDay">
+
+
+                <TextView
+                    style="@style/DayTeamStyle"
+                    android:text="J5" />
+
+                <TextView
+                    android:id="@+id/J5"
+                    style="@style/DayTeamStyle"
+                    android:text="F" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#969696" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                style="@style/WorkingDay">
+
+
+                <TextView
+                    style="@style/DayTeamStyle"
+                    android:text="J6" />
+
+                <TextView
+                    android:id="@+id/J6"
+                    style="@style/DayTeamStyle"
+                    android:text="F" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                style="@style/WorkingDay">
+
+
+                <TextView
+                    style="@style/DayTeamStyle"
+                    android:text="J7" />
+
+                <TextView
+                    android:id="@+id/J7"
+                    style="@style/DayTeamStyle"
+                    android:text="F" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                style="@style/WorkingDay">
+
+
+                <TextView
+                    style="@style/DayTeamStyle"
+                    android:text="J8" />
+
+                <TextView
+                    android:id="@+id/J8"
+                    style="@style/DayTeamStyle"
+                    android:text="F" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                style="@style/RestDay">
+
+
+                <TextView
+                    style="@style/DayTeamStyle"
+                    android:text="J9" />
+
+                <TextView
+                    android:id="@+id/J9"
+                    style="@style/DayTeamStyle"
+                    android:text="F" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                style="@style/RestDay">
+
+
+                <TextView
+                    style="@style/DayTeamStyle"
+                    android:text="J10" />
+
+                <TextView
+                    android:id="@+id/J10"
+                    style="@style/DayTeamStyle"
+                    android:text="F" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                style="@style/RestDay">
+
+
+                <TextView
+                    style="@style/DayTeamStyle"
+                    android:text="J11" />
+
+                <TextView
+                    android:id="@+id/J11"
+                    style="@style/DayTeamStyle"
+                    android:text="F" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                style="@style/RestDay">
+
+
+                <TextView
+                    style="@style/DayTeamStyle"
+                    android:text="J12" />
+
+                <TextView
+                    android:id="@+id/J12"
+                    style="@style/DayTeamStyle"
+                    android:text="F" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
